@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Lista de Desejo</string>
+    <string name="title_LoginActivity">Lista de Desejos</string>
+    <string name="title_tabhostActivity">Home</string>
+    <string name="title_home1Activity">Listas Feitas</string>
+    <string name="title_home2Activity">Criar Lista</string>
+    <string name="title_editarListaActivity">Lista</string>
+    <string name="title_editarItemActivity">Item</string>
+	<string name="title_CadUserActivity">Cadastro de Usuario</string>
+	<string name="share">Share</string>
+</resources>

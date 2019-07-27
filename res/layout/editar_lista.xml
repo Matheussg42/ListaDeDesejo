@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/bottom_bar" />
+
+    <Button
+        android:id="@+id/btnCriarItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/btnSalvarLista"
+        android:text="Criar Item" />
+
+    <ListView
+        android:id="@+id/ltwItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnCriarItem"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btnSalvarLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/countLista"
+        android:text="Salvar" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/ic_menu_delete"
+        android:onClick="ApagarClick" />
+
+    <TextView
+        android:id="@+id/countLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnDelete"
+        android:layout_alignBottom="@+id/btnDelete"
+        android:layout_centerHorizontal="true"
+        android:text="Nome Lista"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

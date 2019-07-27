@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/listaDesejo"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:text="Login:" />
+
+    <TextView
+        android:id="@+id/senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="30dp"
+        android:text="Senha:" />
+
+    <EditText
+        android:id="@+id/inputLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/senha"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/senha"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/inputSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/senha"
+        android:layout_alignBottom="@+id/senha"
+        android:layout_alignLeft="@+id/inputLogin"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/inputLogin"
+        android:layout_below="@+id/inputSenha"
+        android:layout_marginTop="60dp"
+        android:layout_toRightOf="@+id/btnLimpar"
+        android:text="Entrar" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnEntrar"
+        android:layout_alignLeft="@+id/senha"
+        android:text="Limpar" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inputLogin"
+        android:layout_centerHorizontal="true"
+        android:maxHeight="50dp"
+        android:maxWidth="50dp"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:src="@drawable/user_lista" />
+
+    <TextView
+        android:id="@+id/linkCad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:autoLink="all"
+        android:text="Não tem cadastro? Cadatre-se Aqui!" />
+
+</RelativeLayout>

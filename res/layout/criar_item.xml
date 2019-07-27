@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@android:drawable/bottom_bar" />
+
+    <EditText
+        android:id="@+id/categoriaItemField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomeItemField"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:hint="Categoria do Item:" />
+
+    <EditText
+        android:id="@+id/precoMaxItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/precoMinItem"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Preço Maximo:"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/precoMinItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/categoriaItemField"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:hint="Preço Minimo:"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/nomeItemField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Nome do Item:" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/btnCriarItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/btnCancelar"
+        android:onClick="CriarItemClick"
+        android:text="Criar Item" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Cancelar" />
+
+</RelativeLayout>
